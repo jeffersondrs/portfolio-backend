@@ -7,8 +7,11 @@
     "build": "tsc",
     "start": "tsc && node dist/server.js"
   },
+  "engines": {
+    "node": "18.16.1"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Jefferson Santos",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
