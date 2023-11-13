@@ -37,7 +37,7 @@ app.get('/curriculoptbr', (req: Request, res: Response) => {
 });
 app.get('/curriculoenglish', (req: Request, res: Response) => {
     const filePath = path.join(__dirname, '../assets', 'English.pdf');
-  
+
     fs.access(filePath, fs.constants.F_OK, (err) => {
       if (err) {
         res.status(404).send('Arquivo não encontrado.');
