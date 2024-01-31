@@ -21,7 +21,7 @@ app.use(helmet());
 app.use("/api", router);
 
 app.get('/curriculoptbr', (req: Request, res: Response) => {
-  const filePath = path.join(__dirname, '../assets', 'Curriculo atualizado.pdf');
+  const filePath = path.join(__dirname, '../assets', 'Curriculo.pdf');
 
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
